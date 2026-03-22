@@ -16,6 +16,7 @@ def create_app():
 
     CORS(app, origins=[
         "https://memo-frontend.vercel.app",
+        "https://memo-frontend-xi.vercel.app",
         "https://memo-frontend-bw86kwry0-robertofcreds-projects.vercel.app"
         ])  # Permet les requêtes depuis le frontend React
     
