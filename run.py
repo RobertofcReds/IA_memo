@@ -52,7 +52,7 @@ def main():
     init_service(service)
     
     print(f"\n🚀 Serveur démarré sur http://{args.host}:{args.port}")
-    print("   Test: http://localhost:5000/api/v1/health")
+    print(f"   Test: http://{args.host}:{args.port}/api/v1/health")
     print("=" * 60)
     
     app.run(host=args.host, port=args.port, debug=True)
