@@ -14,7 +14,10 @@ def create_app():
     """Crée l'application Flask avec toutes les routes"""
     app = Flask(__name__)
 
-    CORS(app, origins=['https://memo-frontend-bw86kwry0-robertofcreds-projects.vercel.app/'])  # Permet les requêtes depuis le frontend React
+    CORS(app, origins=[
+        "https://memo-frontend.vercel.app",
+        "https://memo-frontend-bw86kwry0-robertofcreds-projects.vercel.app"
+        ])  # Permet les requêtes depuis le frontend React
     
     # ============================================
     # ROUTE DE TEST
